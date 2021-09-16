@@ -8,9 +8,6 @@ import { List, List2 } from '../Basics/Lists';
 import { SimplestFunctionComponent } from '../Basics/SimplestFunctionComponent';
 import { Slots } from '../Basics/Slots';
 
-// child prop
-// "slots"
-
 export const BasicsDemo = () => {
   const [checked, setChecked] = useState(false);
 
@@ -21,9 +18,9 @@ export const BasicsDemo = () => {
       <h3>SimplestFunctionComponent:</h3>
       <SimplestFunctionComponent />
       <br />
-      <FunctionComponentWithProps name={'kecske'} />
+      <FunctionComponentWithProps name={'Jancsi'} />
       <br />
-      <FCInlineAndDeconstruction name={'david'} age={25} />
+      <FCInlineAndDeconstruction name={'David'} age={25} />
       <h3>Kondicionalis rendereles</h3>
       <button onClick={() => setChecked(!checked)}>toggle</button>
       <ConditionalRendering checked={checked} />

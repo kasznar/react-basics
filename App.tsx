@@ -1,6 +1,7 @@
 import React from 'react';
 import { BasicsDemo } from './Basics/BasicsDemo';
 import { ClassDemo } from './ClassComponents/ClassDemo';
+import { ContextDemo } from './Context/ContextDemo';
 import { FormsDemo } from './Forms/FormsDemo';
 import { HooksDemo } from './Hooks/HooksDemo';
 import { Resources } from './Resources';
@@ -13,6 +14,7 @@ export const App = () => {
       <HooksDemo />
       <FormsDemo />
       <ClassDemo />
+      <ContextDemo />
       <Resources />
     </div>
   );

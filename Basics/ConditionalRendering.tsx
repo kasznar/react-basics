@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 
-// conditional rendering
 export const ConditionalRendering: FC<{ checked: boolean }> = props => {
   function text() {
     if (props.checked) {

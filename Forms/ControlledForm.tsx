@@ -4,7 +4,7 @@ export const ControlledForm = () => {
   const [value, setValue] = useState('alma');
 
   function handleSubmit(event) {
-    alert('An essay was submitted: ' + value);
+    alert('Name: ' + value);
     event.preventDefault();
   }
 
@@ -16,12 +16,12 @@ export const ControlledForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Essay:
+        Name: {value}
         <br />
-        <textarea value={value} onChange={handleChange} />
+        <input value={value} onChange={handleChange} />
       </label>
       <br />
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" disabled={!value} />
     </form>
   );
 };
